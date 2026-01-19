@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block title %}Bem-vindo - Gestão de Salas{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow-lg">
+                <div class="card-body text-center p-5">
+                    <h1 class="display-4 mb-4 text-primary">Bem-vindo!</h1>
+                    <p class="lead mb-4">
+                        Sistema de Gestão de Salas
+                    </p>
+                    <div class="mt-4">
+                        <p class="text-muted">
+                            Este é um sistema desenvolvido com Django e Bootstrap 5.3
+                        </p>
+                    </div>
+                    <div class="mt-5">
+                        <button type="button" class="btn btn-primary btn-lg me-3">
+                            Começar
+                        </button>
+                        <button type="button" class="btn btn-outline-secondary btn-lg">
+                            Saiba Mais
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
