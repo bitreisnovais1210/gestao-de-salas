@@ -1,3 +1,8 @@
 from django.db import models
 
-# Create your models here.
+class Sala(models.Model):
+    nome = models.CharField(max_length=255)
+    horarios_disponiveis = models.JSONField(default=dict)
+
+    def __str__(self):
+        return self.nome
